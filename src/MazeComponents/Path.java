@@ -9,23 +9,24 @@ public class Path extends JPanel {
 
     final private static int WIDTH = 8;
     final private static int HEIGHT = 8;
+
     final private static Color BACKGROUND_COLOR = Color.BLACK;
     final private static Color TRAVERSED_COLOR = Color.GRAY;
     final private static Color PATH_COLOR = Color.WHITE;
     final private static Color STARTING_COLOR = Color.GREEN;
     final private static Color END_POINT_COLOR = Color.RED;
 
+    private final int rowIndex;
+    private final int columnIndex;
     private boolean isVisited = false;
-    private ArrayList<Path> availablePaths = new ArrayList<>();
     private boolean isPath = false;
     private boolean isHovered = false;
     private boolean isStartingPoint = false;
     public boolean isEndPoint = false;
-    private final int rowIndex;
-    private final int columnIndex;
     private int stepsToReach = Integer.MAX_VALUE;
     private Path previousPath;
     private boolean isTraversed = false;
+    private ArrayList<Path> availablePaths = new ArrayList<>();
 
     public Path(int XLocation, int YLocation, int rowIndex, int columnIndex) {
 
