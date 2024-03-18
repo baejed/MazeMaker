@@ -15,7 +15,6 @@ public class Maze {
 
     private static final Color OUTLINE_COLOR = Color.DARK_GRAY;
 
-    // Private fields
     private Path[][] mazePaths;
     private boolean pathifyEnabled = false;
     private boolean unpathifyEnabled = false;
@@ -24,12 +23,10 @@ public class Maze {
     private Path selectedPath;
     private ArrayList<Path> outlines;
 
-    // Final fields
     private final Maze maze;
     private final int width;
     private final int height;
 
-    // Other fields
     private int brushSize = 2;
     private boolean selectStartingPoint = false;
     private boolean selectEndPoint = false;

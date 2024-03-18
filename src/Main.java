@@ -24,20 +24,24 @@ public class Main {
 
     static boolean traverse = false;
     static boolean solve = false;
-    static ArrayList<Path> traversedPaths;
-    static Stack<Path> bestPath;
-    static int pathsChecked = 0;
     static boolean brushIncremented = false;
     static boolean brushDecremented = false;
     static boolean isSelectingEndpoint = false;
     static boolean isSelectingStartingPoint = false;
+
+    static ArrayList<Path> traversedPaths;
+    static Stack<Path> bestPath;
+
+    static int pathsChecked = 0;
+    static int speedPerPath = 10;
+
     final static int BUTTON_X = 850;
     final static int BUTTON_X2 = 1050;
+
     final static Font FONT_SMALLEST = new Font("ARIAL", Font.BOLD, 11);
     final static Font FONT_SMALL = new Font("ARIAL", Font.BOLD, 13);
     final static Font FONT = new Font("ARIAL", Font.BOLD, 15);
     final static Font FONT_LARGE = new Font("ARIAL", Font.BOLD, 30);
-    static int speedPerPath = 10;
 
     public static void main(String[] args) throws InterruptedException {
 
