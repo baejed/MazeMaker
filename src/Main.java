@@ -278,6 +278,8 @@ public class Main {
                 maze.unVisitAllPaths();
                 traverse = false;
                 solve = false;
+                selectEndPoint.setText("Set end point");
+                selectStartingPoint.setText("Set start point");
             }
         });
 
